@@ -11,7 +11,9 @@ int main() {
     int a = 0, r = 0;
 
     for(int i = 0; i < 10; i++) {
-        scanf("%s %d %f", alunos[i].nome, &alunos[i].matricula, &alunos[i].media);
+        printf("Didite nome, matricula e media do aluno %d: ", i + 1);
+        
+        scanf(" %29s %d %f", alunos[i].nome, &alunos[i].matricula, &alunos[i].media);
 
         if(alunos[i].media >= 5)
             aprovados[a++] = alunos[i];
@@ -19,13 +21,13 @@ int main() {
             reprovados[r++] = alunos[i];
     }
 
-    printf("Aprovados:\n");
+    printf("\nAprovados:\n");
     for(int i = 0; i < a; i++)
-        printf("%s %.2f\n", aprovados[i].nome, aprovados[i].media);
+        printf("Nome: %-15s | Media: %.2f\n", aprovados[i].nome, aprovados[i].media);
 
-    printf("Reprovados:\n");
+    printf("\rReprovados:\n");
     for(int i = 0; i < r; i++)
-        printf("%s %.2f\n", reprovados[i].nome, reprovados[i].media);
+        printf("Nome: %-15s | Media: %.2f\n", reprovados[i].nome, reprovados[i].media);
 
     return 0;
 }
