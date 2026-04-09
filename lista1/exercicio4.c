@@ -29,7 +29,7 @@ int main() {
             for(int k = 0; k < 3; k++) {
                 soma += m[i][k] * identidade[k][j];
             }
-            printf("%d ", soma);
+            printf("%d\t", soma);
         }
         printf("\n");
     }
