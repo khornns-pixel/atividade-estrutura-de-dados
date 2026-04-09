@@ -3,11 +3,14 @@
 int main() {
     int v[3], m[3][3];
 
-    for(int i = 0; i < 3; i++) scanf("%d", &v[i]);
+    printf("Digite 3 valores para o vetor: \n");
+    for(int i = 0; i < 3; i++) 
+    scanf("%d", &v[i]);
 
+printf("Digite os 9 valores para a matrix m (3x3):\n");
     for(int i = 0; i < 3; i++)
         for(int j = 0; j < 3; j++)
-            scanf("%d", &m[i][j]);
+            scanf("\n %d", &m[i][j]);
 
     printf("Resultado:\n");
 
@@ -18,6 +21,8 @@ int main() {
         }
         printf("%d ", soma);
     }
+
+    printf("\n");
 
     return 0;
 }
