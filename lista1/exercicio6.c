@@ -4,7 +4,7 @@ struct Aluno {
     char nome[30];
     int matricula;
     float media;
-};
+}
 
 int main() {
     struct Aluno alunos[10], aprovados[10], reprovados[10];
