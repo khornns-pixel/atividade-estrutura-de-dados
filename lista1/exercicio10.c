@@ -2,15 +2,15 @@
 #include <stdlib.h>
 
 struct Aluno {
-    char nome[30];
+    char nome[50];
     float nota;
 };
 
 struct Aluno* maiorNota(struct Aluno *a, int n) {
     struct Aluno *maior = a;
-
     for(int i = 1; i < n; i++) {
-        if((a + i)->nota > maior->nota) {
+        if((a + i)->nota > maior->nota) 
+{
             maior = (a + i);
         }
     }
@@ -20,12 +20,14 @@ struct Aluno* maiorNota(struct Aluno *a, int n) {
 
 int main() {
     int n;
+    printf("Digite a quantidade de alunos: ");
     scanf("%d", &n);
 
     struct Aluno *alunos = malloc(n * sizeof(struct Aluno));
 
     for(int i = 0; i < n; i++) {
-        scanf("%s %f", (alunos + i)->nome, &(alunos + i)->nota);
+        printf("Nome e nota do aluno %d:", i + 1);
+        scanf(" %s %f", (alunos + i)->nome, &(alunos + i)->nota);
     }
 
     struct Aluno *top = maiorNota(alunos, n);
