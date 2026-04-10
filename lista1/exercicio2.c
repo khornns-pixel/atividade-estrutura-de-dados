@@ -12,6 +12,5 @@ int main() {
     for(int i = 4; i >= 0; i--) {
         printf("%d", v[i]);
     }
-
     return 0;
 }
