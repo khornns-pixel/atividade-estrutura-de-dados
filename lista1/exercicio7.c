@@ -5,7 +5,7 @@ struct Livro {
     char titulo[30];
     char autor[15];
     int ano;
-};
+}
 
 int main() {
     struct Livro livros[5];
