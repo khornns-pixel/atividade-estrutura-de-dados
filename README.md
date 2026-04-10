@@ -1,4 +1,5 @@
 # Lista 1 - Estrutura de Dados
+Abaixo estão detalhados os exercícios propostos e a lógica aplicada em cada solução:
 
 ## Exercício 1
 
