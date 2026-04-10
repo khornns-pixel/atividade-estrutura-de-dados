@@ -13,7 +13,6 @@ printf("Digite os 9 valores para a matrix m (3x3):\n");
             scanf("\n %d", &m[i][j]);
 
     printf("Resultado:\n");
-
     for(int j = 0; j < 3; j++) {
         int soma = 0;
         for(int i = 0; i < 3; i++) {
