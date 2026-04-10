@@ -15,6 +15,8 @@ int ordenar(int *a, int *b, int *c) {
 int main() {
     int x, y, z;
 
+    printf("Digite 3 numeros: ");
+
     scanf("%d %d %d", &x, &y, &z);
 
     int iguais = ordenar(&x, &y, &z);
